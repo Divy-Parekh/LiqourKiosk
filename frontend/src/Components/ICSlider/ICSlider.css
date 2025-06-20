@@ -1,0 +1,218 @@
+.slider-container {
+
+    position: relative;
+    width: 80%;
+    height: 70vh;
+    margin: 20px auto;
+    overflow: hidden;
+    z-index: 100;
+    border-radius: 15px;
+    
+}
+
+@media (max-width: 1280px) {
+    .slider-container {
+        width: 100%;
+        height: 60vh;
+        margin: 10vh 0;
+    }
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content {
+    position: absolute;
+    left: 10%;
+    max-width: 30%;
+    text-align: center;
+    background: none;
+
+}
+
+
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    background: none;
+
+}
+
+.content p {
+    font-size: 1.2rem;
+    background: none;
+
+    margin-bottom: 15px;
+}
+
+.content-actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: none;
+
+}
+
+.white-font{
+    color: #fff;
+}
+
+.dark-font{
+    color: black;
+}
+
+.slide-link {
+    background: none;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+
+button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* transition: background 0.3s ease; */
+}
+
+
+.white-link{
+    color: #fff;
+}
+
+.dark-link{
+    color: black;
+}
+
+.white-button{
+    margin-left: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid #fff;
+}
+
+
+
+.dark-button{
+    margin-left: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 8px 20px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+/* Horizontal Line */
+hr {
+    margin-top: 10px;
+    border: none;
+    height: 2px;
+    background-color: lightgray;
+}
+
+
+.liquor-assistant-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #111; */
+  color: #fff;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* .liquor-assistant-section .text-content {
+  flex: 1;
+  min-width: 250px;
+} */
+
+.liquor-assistant-section h2 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+}
+
+.liquor-assistant-section p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.assistant-button {
+    margin-left: 15px;
+  background-color: #fff;
+  border: none;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.assistant-button:hover {
+  background-color: #eee;
+}
