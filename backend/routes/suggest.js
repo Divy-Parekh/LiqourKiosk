@@ -7,7 +7,7 @@ const router = express.Router();
 
 // Helper: Create suggestion message
 function createSuggestionMessage(matchedLiquors) {
-  const items = matchedLiquors.map((item) => `${item.name} (${item.type})`);
+  const items = matchedLiquors.map((item) => `${item.name} `);
   return `Based on your mood, we suggest: ${items.join(
     ", "
   )}. Enjoy responsibly!`;
