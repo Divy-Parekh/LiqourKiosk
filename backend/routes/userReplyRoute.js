@@ -7,7 +7,7 @@ const router = express.Router();
 
 // Helper: Create available liquors message
 function createAvailableLiquorsMessage(liquorList) {
-  const items = liquorList.map(item => `${item.name} (${item.type})`);
+  const items = liquorList.map(item => `${item.name}`);
   return `The available liquors are: ${items.join(", ")}.`;
 }
 
